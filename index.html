@@ -2,36 +2,106 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agung Pambudi - Portofolio</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 30px; background-color: #f9f9f9; }
-    h1, h2, h3 { color: #2c3e50; }
-    a { color: #0077cc; text-decoration: none; }
-    .project-card { background: #fff; padding: 20px; margin-top: 20px; border-left: 4px solid #3498db; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #2980b9, #6dd5fa);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+    .cta-btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background: white;
+      color: #2980b9;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .cta-btn:hover {
+      background: #ecf0f1;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-left: 5px solid #3498db;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .project-card h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .project-card ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: #eee;
+      color: #777;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .cta-btn {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <h1>Agung Pambudi, S.Kom</h1>
-  <p>Calon penerima beasiswa S2. Fokus pada pengembangan sistem analisis data, terutama di bidang <strong>data mining</strong>.</p>
-  <p>Email: <a href="mailto:agung.pambudi4000@gmail.com">agung.pambudi4000@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/lostwar21" target="_blank">lostwar21</a></p>
+  <header>
+    <h1>Agung Pambudi, S.Kom</h1>
+    <p>Data Mining Enthusiast & Streamlit Dashboard Developer</p>
+    <button class="cta-btn" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">Lihat Proyek Saya</button>
+  </header>
 
-  <section id="projects">
+  <section class="section" id="projects">
     <h2>📊 Proyek Utama</h2>
     <div class="project-card">
       <h3>📈 Dashboard Analisis Nilai Mahasiswa</h3>
       <p><strong>Tools:</strong> Python, Pandas, Scikit-learn, Streamlit</p>
-      <p>Dashboard interaktif berbasis Streamlit yang digunakan untuk:</p>
+      <p>Dashboard interaktif berbasis Streamlit untuk:</p>
       <ul>
         <li>🔮 Prediksi kelulusan menggunakan algoritma klasifikasi</li>
-        <li>📊 Visualisasi IPK dan kehadiran</li>
-        <li>🧠 Clustering performa akademik mahasiswa</li>
+        <li>📊 Visualisasi IPK dan kehadiran mahasiswa</li>
+        <li>🧠 Clustering performa akademik dengan K-Means</li>
       </ul>
-      <p><a href="https://github.com/lostwar21/mahasiswa-dashboard" target="_blank">🔗 Lihat di GitHub</a></p>
+      <p><a href="https://github.com/lostwar21/mahasiswa-dashboard" target="_blank">🔗 Lihat Project di GitHub</a></p>
     </div>
   </section>
+
+  <footer>
+    &copy; 2025 Agung Pambudi · Email: agung.pambudi4000@gmail.com · GitHub: lostwar21
+  </footer>
 
 </body>
 </html>

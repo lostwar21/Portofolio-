@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agung Pambudi | Portofolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-white text-gray-900 font-sans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agung Pambudi - Portofolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; background: #f9f9f9; color: #333; }
+    h1, h2, h3 { color: #2c3e50; }
+    .project-card { background: #fff; padding: 20px; margin: 20px 0; border-left: 5px solid #3498db; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    a { color: #3498db; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
 
-    <!-- Header -->
-    <header class="p-6 flex justify-between items-center bg-gray-100">
-      <h1 class="text-2xl font-bold">Agung Pambudi</h1>
-      <nav class="space-x-4">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="about.html" class="hover:underline">Tentang</a>
-        <a href="projects.html" class="hover:underline">Proyek</a>
-        <a href="contact.html" class="hover:underline">Kontak</a>
-      </nav>
-    </header>
+  <h1>Agung Pambudi, S.Kom</h1>
+  <p>Calon penerima beasiswa S2. Fokus di bidang Data Mining dan Dashboard Interaktif.</p>
+  <p>Email: <a href="mailto:agung.pambudi4000@gmail.com">agung.pambudi4000@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/lostwar21" target="_blank">lostwar21</a></p>
 
-    <!-- Hero Section -->
-    <section class="text-center py-32 px-4 bg-blue-50">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">
-        Agung Pambudi, S.Kom
-      </h2>
-      <p class="text-xl text-gray-700 mb-6">
-        Data Mining Enthusiast | Building Insight from Educational Data
-      </p>
-      <div class="space-x-4">
-        <a href="projects.html" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
-          Lihat Proyek
-        </a>
-        <a href="about.html" class="border border-blue-600 text-blue-600 px-6 py-2 rounded hover:bg-blue-100">
-          Tentang Saya
-        </a>
-      </div>
-    </section>
+  <section id="projects">
+    <h2>📊 Proyek Data Mining</h2>
 
-    <!-- Footer -->
-    <footer class="p-4 bg-gray-100 text-center text-sm text-gray-600">
-      &copy; 2025 Agung Pambudi. All rights reserved.
-    </footer>
+    <div class="project-card">
+      <h3>📈 Dashboard Analisis Nilai Mahasiswa</h3>
+      <p><strong>Tools:</strong> Python, Pandas, Scikit-learn, Streamlit</p>
+      <p><strong>Deskripsi:</strong> Proyek ini merupakan dashboard interaktif berbasis Streamlit yang digunakan untuk menganalisis data nilai mahasiswa, memprediksi kelulusan, dan menyajikan insight edukatif berbasis data mining.</p>
+      <ul>
+        <li>🔮 Prediksi kelulusan menggunakan algoritma klasifikasi</li>
+        <li>📊 Visualisasi IPK dan kehadiran mahasiswa</li>
+        <li>🧠 Clustering performa akademik menggunakan K-Means</li>
+      </ul>
+      <p><a href="https://github.com/lostwar21/mahasiswa-dashboard" target="_blank">🔗 Lihat Project di GitHub</a></p>
+    </div>
+  </section>
 
-  </body>
+</body>
 </html>
